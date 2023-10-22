@@ -1,0 +1,116 @@
+.main-content {
+    background: url("pictures/img_23db41_5.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blur-main-content {
+    background: rgba(72, 68, 68, 0.8);
+}
+.rotate {
+    overflow: hidden;
+    position: relative;
+}
+.project {
+    transform: rotateY(0deg);
+    transition: 0.8s;
+}
+.detailed-info {
+    font-size: 70%;
+    position: absolute;
+    height: 100%;
+    top: 1%;
+    padding: 2%;
+    text-align: left;
+    transform: rotateY(180deg);
+    background-color: white;
+    transition: 0.8s;
+}
+.info-need-more-space {
+    font-size: 56%;
+}
+.project, .detailed-info {
+    cursor: pointer;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 1s, revert;
+}
+.rotate:hover > .project {
+    transform: rotateY(-180deg);
+}
+.rotate:hover > .detailed-info {
+    transform: rotateY(0deg);
+}
+.project-title {
+    font-size: 80%;
+    background-color: rgba(254, 1, 154, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+.blur {
+    background: rgba(0, 0, 0, 0.7);
+}
+.header, .footer {
+    background: url("pictures/r21EloC-dxM.jpg");
+    background-size: 60%;
+}
+.logo-fpm {
+    width: 90%;
+}
+.main-title {;
+    color: #ece6e6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 90%;
+}
+.subtitle {
+    font-size: 60%;
+}
+.date-title {
+    font-size: 60%;
+}
+.yellow-text {
+    color: #CFFF11;
+}
+.purple-text {
+    color: #621C53;
+}
+.magenta-text {
+    color: #FE019A;
+}
+.footer-text {
+    font-size: 80%;
+    color: rgba(220, 206, 206, 0.5);
+}
+.point:after {
+    content: '\2022';
+}
+@media screen and (min-width: 760px) {
+    .project-title {
+        font-size: 110%;
+    }
+    .detailed-info {
+        font-size: 100%;
+    }
+    .header {
+        background-size: 20%;
+        height: 7rem;
+    }
+    .blur-header {
+        height: 7rem;
+    }
+    .main-title {
+        font-size: 100%;
+    }
+    .logo-fpm {
+        width: 36%;
+    }
+    .footer {
+        background-size: 20%;
+    }
+    .logo-kubsu {
+        width: 120%;
+        margin: 1rem;
+    }
+}
