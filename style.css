@@ -22,11 +22,17 @@
     padding: 2%;
     text-align: left;
     transform: rotateY(180deg);
-    background-color: white;
+    background: radial-gradient(rgba(218, 206, 206, 0.75), rgba(143, 129, 129, 0.8));
     transition: 0.8s;
 }
 .info-need-more-space {
-    font-size: 56%;
+    font-size: 60%;
+}
+.info-need-more-more-space {
+    font-size: 50%;
+}
+.info-need-less-space {
+    font-size: 120%;
 }
 .project, .detailed-info {
     cursor: pointer;
@@ -44,10 +50,13 @@
 }
 .project-title {
     font-size: 80%;
-    background-color: rgba(254, 1, 154, 0.3);
+    background-color: rgba(254, 1, 154, 0.4);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
+}
+.project-title:hover {
+    background: radial-gradient(rgba(98, 28, 83, 0.6), rgba(254, 1, 154, 0.6));
 }
 .blur {
     background: rgba(0, 0, 0, 0.7);
@@ -80,18 +89,28 @@
     color: #FE019A;
 }
 .footer-text {
-    font-size: 80%;
+    font-size: 50%;
     color: rgba(220, 206, 206, 0.5);
 }
 .point:after {
     content: '\2022';
 }
+
 @media screen and (min-width: 760px) {
     .project-title {
         font-size: 110%;
     }
     .detailed-info {
         font-size: 100%;
+    }
+    .info-need-more-space {
+        font-size: 90%;
+    }
+    .info-need-more-more-space {
+        font-size: 85%;
+    }
+    .info-need-less-space {
+        font-size: 160%;
     }
     .header {
         background-size: 20%;
@@ -101,16 +120,25 @@
         height: 7rem;
     }
     .main-title {
+        font-size: 150%;
+    }
+    .subtitle {
+        font-size: 100%;
+    }
+    .date-title {
         font-size: 100%;
     }
     .logo-fpm {
-        width: 36%;
+        width: 28%;
     }
     .footer {
         background-size: 20%;
     }
     .logo-kubsu {
-        width: 120%;
+        width: 150%;
         margin: 1rem;
+    }
+    .footer-text {
+        font-size: 80%;
     }
 }
